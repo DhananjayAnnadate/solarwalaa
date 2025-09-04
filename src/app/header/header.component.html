@@ -1,0 +1,56 @@
+<div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+    <div class="row gx-0">
+        <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center text-primary">
+                <small class="py-2"><i class="far fa-clock  me-2"></i>Opening Hours: Mon - Sat : 10.00 am - 7.00
+                    pm</small>
+            </div>
+        </div>
+        <div class="col-md-6 text-center text-lg-end ">
+            <div class=" d-inline-flex align-items-center bg-secondary text-white  px-5">
+                <div class="me-3 pe-3 border-end py-2">
+                    <h5 class="m-0 text-white"><i class="fa fa-envelope-open me-2"> {{email | lowercase}}</i></h5>
+                </div>
+                <div class="py-2">
+                    <p class="m-0"><i class="fa fa-phone-alt me-2"></i>8080809464</p>
+                </div>
+                          
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a routerLink="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a routerLink="/" class="navbar-brand p-0">
+            <img src="assets/img/logo.png" alt="" style="    width: 80px;    height: 80px;">
+        </a>
+        <h2 class="m-0 text-primary "><i>solarwalaa..</i></h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a routerLink="/" routerLinkActive="active" class="nav-item nav-link">Home</a>
+            <a routerLink="about" routerLinkActive="active" class="nav-item nav-link">About</a>
+            <a routerLink="gallery" routerLinkActive="active" class="nav-item nav-link">Gallery</a>
+            <div class="nav-item dropdown">
+                <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a routerLink="product/solarcleaning" class="dropdown-item">Solar-Cleaning</a>
+                    <a routerLink="product/solarlight" class="dropdown-item">Solar Light</a>
+                    <a routerLink="product/AcdbDcdb" class="dropdown-item">ACDB-DCDB</a>
+                   
+                    <a routerLink="product/dc-wire" class="dropdown-item">DC-Wire</a>
+                    <a routerLink="product/mc4connector" class="dropdown-item">Mc4-Connector</a>
+                    <a routerLink="product/la-earthing" class="dropdown-item">LA-Earthing</a>
+                    <a routerLink="product/fuseSpd" class="dropdown-item">FUSE SPD AND MCB</a>
+                </div>
+            </div>
+            <a routerLink="contact" routerLinkActive="active" class="nav-item nav-link">Contact</a>
+        </div>
+        <a routerLink="enquiry" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Enquiry<i
+                class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>

@@ -1,0 +1,39 @@
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h1 class="display-3 text-white animated slideInDown">Join Us</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a class="text-white" routerLink="/">Home</a></li>
+            <li class="breadcrumb-item text-white active" routerLink="enquiry">Join</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-xxl py-5">
+  <div class="container">
+      <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+              <div class="position-relative h-100">
+                  <img class="img-fluid position-absolute w-100 h-100 " src="assets/img/cat-3.jpg" alt="" style="object-fit: cover;">
+              </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+              <form id="form"   >
+                  <label for="name">Name  : </label>
+                  <input type="text" class="form-control bg-light f1" id="name" name="name" [(ngModel)] = "name" required> <br>
+                  <label for="name">Email : </label>
+                  <input type="email" class="form-control  bg-light f1"   name="email" [(ngModel)] = "email" required> <br>
+                  <label for="name">Mobile: </label>
+                  <input type="number" class="form-control  bg-light f1"  name="mobile" [(ngModel)] = "mobile" required> <br>
+                  <label for="name">Quary : </label>
+                  <input type="text" class="form-control  bg-light  qbh f1" name="textbox"  [(ngModel)] = 'textbox'> <br>
+                  <a class="btn btn-dark py-2 px-4  bat f2" type="button" target="_blank" href="https://wa.me/918888232345?text= Name: {{name}} %0a Email: {{email}} %0a Mobile No: {{mobile}} %0a Quarry: {{textbox}} %0a%0a Send Your Quarry"> Whatsapp</a>
+                 
+              </form>
+      </div>
+  </div>
+</div>
